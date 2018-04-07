@@ -61,6 +61,9 @@ new Vue({
     },
     giveUp: function() {
       this.gameIsRunning = false;
+      this.monsterHealth = 100;
+      this.playerHealth = 100;
+      this.turns = [];
       alert("Come back and try again");
     },
     calculatetDamage: function(min, max) {
